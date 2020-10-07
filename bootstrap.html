@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+   
+    <title>Navbar</title>
+   
+</head>
+<style type="text/css">
+    .b{
+    	border: 1px solid black
+    }
+    .c{
+    	border: 1px solid red;
+    }
+</style>
+<body>
+	<h1>Bootstrap</h1>
+	
+	<div class="container-fluid b">
+		<div class="row">
+			<!-- //same on all screeen use this  -->
+		<!-- 	<div class="col-4  c">
+				a
+			</div>
+			<div class="col-4 c">
+				a
+			</div>
+			<div class="col-4 c">
+				a
+			</div> -->
+			<!-- <div class="col-sm-3 col-md-6">
+				a
+			</div>
+			<div class="col-sm-3 col-md-6">
+				a
+			</div>
+			<div class="col-sm-3 col-md-6">
+				a
+			</div>
+			<div class="col-sm-3 col-md-6">
+				a
+			</div> -->
+
+		<!--   -->
+			<div class="col-sm-3 col-md-6 col-lg-12 col-xl-6">
+				a<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"> Sign In </button>
+			</div>
+			<div class="col-sm-3 col-md-6 col-lg-6 col-xl-6">
+				 <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <div class="modal-title"><img class="img-fluid" src="https://i.imgur.com/rAvNenJ.png"></div>
+                </div> <!-- Modal body -->
+                <div class="modal-body">
+                    <p class="title">Use your existing account to sign in</p>
+                    <form method="POST">
+                        <div class="input-group"> <input class="input--style-3" type="text" placeholder="Your email*" name="email"> </div>
+                        <div class="input-group"> <input class="input--style-3" type="password" placeholder="Password*" name="password"> </div>
+                        <div class="extra"> <a href="#"><u>I forgot my password</u></a> </div>
+                        <div class="p-t-10"> <button class="btn btn--pill btn--signin" type="submit" data-target="#">SIGN IN</button> </div>
+                        <p class="title">or sign in using apps you love:</p>
+                        <div class="row">
+                            <div class="col">
+                                <div class="p-t-10"> <button class="btn btn--pill btn--green" type="submit">SIGN IN WITH GOOGLE <img src="https://img.icons8.com/color/48/000000/google-logo.png" /> </button> </div>
+                            </div>
+                            <div class="col">
+                                <div class="p-t-10"> <button class="btn btn--pill btn--green" type="submit">SIGN IN WITH PODIO <img src="https://img.icons8.com/color/48/000000/podio.png" /> </button> </div>
+                            </div>
+                        </div>
+                        <p class="extra new">New to teamdeck? <a href="#"><u>Sign up</u></a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+			</div>
+			<div class="col-sm-3 col-md-6 col-lg-6 col-xl-6">
+				a
+			</div>
+			<div class="col-sm-3 col-md-6 col-lg-6 col-xl-6">
+				a
+			</div>
+			
+		</div>
+	</div>
+
+
+	<!--  -->
+
+
+
+
+   <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
