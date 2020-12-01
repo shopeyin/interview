@@ -86,7 +86,32 @@ class DoublyLinkedList {
 
   reverseNodeList() {}
 
-  insertNodeByIndex() {}
+  insertNodeByIndex(data, index) {
+    if (index === 0) {
+      this.insertFirstNode(data);
+      return;
+    }
+    if (index > this.length) {
+      this.insertLastNode(data);
+    } else {
+      let node = new DoublyNode(data);
+      let previous;
+      let currentHead = this.head;
+      let count = 0;
+
+      while (count < index) {
+        previous = currentHead;
+        count++;
+        currentHead = currentHead.next;
+      }
+
+      previous.next = node;
+      node.next = currentHead;
+      node.prev = previous;
+    }
+
+    this.length++;
+  }
 
   getAllNodeData() {
     let currentHead = this.head;
@@ -94,38 +119,41 @@ class DoublyLinkedList {
       console.log(currentHead.data);
       currentHead = currentHead.next;
     }
-    console.log(`sizee ${this.length}`);
   }
 }
 
 dl = new DoublyLinkedList();
-// dl.insertFirstNode(9);
-// dl.insertFirstNode(5);
-// dl.insertFirstNode(2);
-// dl.deleteLastNode();
+dl.insertLastNode(1);
+dl.insertFirstNode(9);
+dl.insertFirstNode(5);
+
+//dl.insertFirstNode(3);
+// dl.insertNodeByIndex(6, 1);
+// c(dl.head.next);
+//dl.deleteLastNode();
 // dl.searchNodeByValue(5);
 // c(dl.searchNodeByValue(7));
 // //dl.deleteFirstNode();
-// //dl.insertLastNode(1);
+
 // dl.getAllNodeData();
-// c(dl);
-
-let arr = [
-  {
-    id: 1,
-    name: "ola",
-  },
-  {
-    id: 2,
-    name: "femia",
-  },
-  {
-    id: 3,
-    name: "uyo",
-  },
-];
-let u = arr.map((a) => {
-  dl.insertFirstNode(a.name);
-});
-
 c(dl);
+
+// let arr = [
+//   {
+//     id: 1,
+//     name: "ola",
+//   },
+//   {
+//     id: 2,
+//     name: "femia",
+//   },
+//   {
+//     id: 3,
+//     name: "uyo",
+//   },
+// ];
+// let u = arr.map((a) => {
+//   dl.insertFirstNode(a.name);
+// });
+
+// c(dl);

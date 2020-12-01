@@ -1372,29 +1372,63 @@ console.log(n)
 // 	return item !==itemId
 // })
 
-function saveThePrisoner(n, m, s) {
+// function saveThePrisoner(n, m, s) {
 
-	let neww = []
+// 	let neww = []
 
-	for (var i = s; i <=n; i++) {
+// 	for (var i = s; i <=n; i++) {
 		
-		neww.push(i)
+// 		neww.push(i)
+// 	}
+
+// 	for (var j = 1; j <=n; j++) {
+// 		neww.push(j)
+// 	}
+
+	
+
+// 	let b = neww.slice(0,m)
+
+	
+
+// 	let lastItem = b[b.length-1]
+	
+
+// 	return lastItem.toString()
+// }
+
+// saveThePrisoner(3,7,3)
+
+function mergeArray(r,l) {
+	let rightIndex = 0; 
+	let leftIndex = 0
+	let rl = r.length
+	let ll = l.length
+	let union = []
+
+	while( rightIndex < rl && leftIndex < ll ){
+
+		if(r[rightIndex] < l[leftIndex]){
+			union.push(r[rightIndex])
+			rightIndex++
+		}else{
+			union.push(l[leftIndex])
+			leftIndex++
+		}
 	}
 
-	for (var j = 1; j <=n; j++) {
-		neww.push(j)
+	while(rightIndex < rl){
+		union.push(r[rightIndex])
+		rightIndex++
+	}
+	while(leftIndex < ll){
+		union.push(l[leftIndex])
+		leftIndex++
 	}
 
-	
-
-	let b = neww.slice(0,m)
-
-	
-
-	let lastItem = b[b.length-1]
-	
-
-	return lastItem.toString()
+	return union
 }
 
-saveThePrisoner(3,7,3)
+let mt = [1,3,5]
+let tm = [2,3,4]
+//console.log(mergeArray(mt,tm))

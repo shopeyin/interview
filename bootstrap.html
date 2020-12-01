@@ -21,22 +21,55 @@
     .c{
     	border: 1px solid red;
     }
+
+    .rectangle {
+  height: 50px;
+  width: 100px;
+  background-color: #555;
+}
+.triangle-left {
+  position: relative;
+  left: -50px;
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-right: 50px solid red;
+  border-bottom: 25px solid transparent;
+
+}
 </style>
 <body>
 	<h1>Bootstrap</h1>
 	
 	<div class="container-fluid b">
 		<div class="row">
+      <div class="rectangle"></div>
+      <div class="triangle-left"></div>
 			<!-- //same on all screeen use this  -->
-		<!-- 	<div class="col-4  c">
+			<!-- <div class="col-3  col-sm-6  c">
 				a
 			</div>
-			<div class="col-4 c">
-				a
+			<div class="col-3  col-sm-6  c">
+				b
 			</div>
-			<div class="col-4 c">
-				a
-			</div> -->
+			<div class="col-3 col-sm-6 c">
+				c
+			</div>
+      <div class="col-3  col-sm-6 c">
+        d
+      </div>
+      <div class="col-3 order-12 col-sm-6 col-md-6 order-md-1  c">
+        a
+      </div>
+      <div class="col-3 order-1 col-sm-6  col-md-6 order-2 c">
+        b
+      </div>
+      <div class="col-3 order-2 col-sm-6  col-md-6 order-3 c">
+        c
+      </div>
+      <div class="col-3 order-4 col-sm-6 col-md-6 order-4 c">
+        d
+      </div> -->
 			<!-- <div class="col-sm-3 col-md-6">
 				a
 			</div>
@@ -50,53 +83,21 @@
 				a
 			</div> -->
 
-		<!--   -->
-			<div class="col-sm-3 col-md-6 col-lg-12 col-xl-6">
-				a<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"> Sign In </button>
+	
+       
+  
 			</div>
-			<div class="col-sm-3 col-md-6 col-lg-6 col-xl-6">
-				 <div class="modal fade" id="myModal">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <div class="modal-title"><img class="img-fluid" src="https://i.imgur.com/rAvNenJ.png"></div>
-                </div> <!-- Modal body -->
-                <div class="modal-body">
-                    <p class="title">Use your existing account to sign in</p>
-                    <form method="POST">
-                        <div class="input-group"> <input class="input--style-3" type="text" placeholder="Your email*" name="email"> </div>
-                        <div class="input-group"> <input class="input--style-3" type="password" placeholder="Password*" name="password"> </div>
-                        <div class="extra"> <a href="#"><u>I forgot my password</u></a> </div>
-                        <div class="p-t-10"> <button class="btn btn--pill btn--signin" type="submit" data-target="#">SIGN IN</button> </div>
-                        <p class="title">or sign in using apps you love:</p>
-                        <div class="row">
-                            <div class="col">
-                                <div class="p-t-10"> <button class="btn btn--pill btn--green" type="submit">SIGN IN WITH GOOGLE <img src="https://img.icons8.com/color/48/000000/google-logo.png" /> </button> </div>
-                            </div>
-                            <div class="col">
-                                <div class="p-t-10"> <button class="btn btn--pill btn--green" type="submit">SIGN IN WITH PODIO <img src="https://img.icons8.com/color/48/000000/podio.png" /> </button> </div>
-                            </div>
-                        </div>
-                        <p class="extra new">New to teamdeck? <a href="#"><u>Sign up</u></a></p>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-			</div>
-			<div class="col-sm-3 col-md-6 col-lg-6 col-xl-6">
+			<!-- <div class="col-sm-3 col-md-6 col-lg-6 col-xl-6">
 				a
 			</div>
 			<div class="col-sm-3 col-md-6 col-lg-6 col-xl-6">
 				a
-			</div>
+			</div> -->
 			
 		</div>
 	</div>
 
 
-	<!--  -->
 
 
 
