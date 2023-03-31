@@ -1,6 +1,3 @@
-function c(v) {
-  console.log(v);
-}
 
 class DoublyNode {
   constructor(data, prev = null, next = null) {
