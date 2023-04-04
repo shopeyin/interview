@@ -730,137 +730,246 @@
 // //   console.log(array)
 // // }
 
-function sNodeData(data) {
+function Node(data) {
   this.data = data;
   this.next = null;
 }
 
-function SinglyLinkedList() {
+function LinkedList() {
   this.head = null;
+
   this.size = 0;
 }
 
-SinglyLinkedList.prototype.insertFirstNode = function (data) {
+LinkedList.prototype.insertNode = function (data) {
+  let node = new Node(data);
   if (this.head === null) {
-    this.head = new sNodeData(data);
-  } else {
-    let temp = this.head;
-    this.head = new sNodeData(data);
-    this.head.next = temp;
-  }
-
-  this.size++;
-};
-
-SinglyLinkedList.prototype.insertLastNode = function (data) {
-  if (this.head === null) {
-    this.head = new sNodeData(data);
+    this.head = node;
   } else {
     let currentHead = this.head;
-    while (currentHead.next !== null) {
+
+    while (currentHead.next) {
       currentHead = currentHead.next;
     }
 
-    currentHead.next = new sNodeData(data);
+    currentHead.next = node;
   }
 
   this.size++;
 };
-
-SinglyLinkedList.prototype.insertLastNode = function (data) {
+LinkedList.prototype.insertFirst = function (data) {
+  let node = new Node(data);
   if (this.head === null) {
-    this.head = new sNodeData(data);
+    this.head = node;
   } else {
     let currentHead = this.head;
-    while (currentHead.next !== null) {
-      currentHead = currentHead.next;
-    }
-
-    currentHead.next = new sNodeData(data);
+    this.head = node;
+    this.head.next = currentHead;
   }
 
   this.size++;
 };
+LinkedList.prototype.printNode = function () {
+  let currentHead = this.head;
 
-SinglyLinkedList.prototype.printAllData = function (data) {
-  let currentHead = this.head
-  while(currentHead){
-    console.log(currentHead.data)
-    currentHead = currentHead.next
+  while (currentHead) {
+    console.log(currentHead.data);
+    currentHead = currentHead.next;
   }
-  
 };
 
-SinglyLinkedList.prototype.firstElement = function () {
- console.log(this.head.data)
-  
-};
-SinglyLinkedList.prototype.lastElement = function () {
-
-
-  
-   let currentHead = this.head
-  while(currentHead.next){
-    currentHead = currentHead.next
+LinkedList.prototype.insertAtIndex = function (index, data) {
+  if (index === 0) {
+    this.insertFirst(data);
+    return;
   }
-  console.log(currentHead.data)
- };
+  if(index > this.size){
+    this.insertNode(data);
+    return
+  }
+  let node = new Node(data);
+  let currentHead = this.head;
+  let prevHead;
+  let track = 0;
+  while (track < index) {
+    prevHead = currentHead;
+    currentHead = currentHead.next;
+    track++;
+  }
 
- SinglyLinkedList.prototype.searchData = function (value) {
+  prevHead.next = node;
+  node.next = currentHead;
+  this.size++;
+};
 
-
-  
-   let currentHead = this.head
-  while(currentHead){
-    if(currentHead.data === value){
-      return true
+LinkedList.prototype.searchEl = function (element) {
+  let currentHead = this.head;
+  while (currentHead) {
+    if (currentHead.data === element) {
+      return true;
     }
-    currentHead = currentHead.next
+    currentHead = currentHead.next;
   }
-  return false
- };
+  return false;
+};
 
- SinglyLinkedList.prototype.deleteFirstNode = function () {
-  if(!this.head){
-    return null
+
+LinkedList.prototype.removeEl = function (element) {
+  if (this.head.data === element) {
+    this.head = this.head.next;
+  } else {
+    let currentHead = this.head;
+    let prevHead;
+    while (currentHead) {
+      if (currentHead.data === element) {
+        prevHead.next = currentHead.next;
+      }
+      prevHead = currentHead;
+      currentHead = currentHead.next;
+    }
   }
-  let newHead = this.head.next
-  this.head = newHead
- //console.log(currentHead.data)
+  this.size--
+};
 
- this.size--
- 
-
-  
- };
-
- SinglyLinkedList.prototype.deleteLastNode = function () {
-  if(!this.head){
-    return null
-  }
+LinkedList.prototype.removeLast = function () {
   let currentHead = this.head
-  let prevHead
-  while(currentHead.next){
+  let prevHead 
+  while(currentHead.next !== null){
     prevHead = currentHead
     currentHead = currentHead.next
   }
-  //console.log(prevHead.data)
   prevHead.next = null
-  //console.log(currentHead.data)
- this.size--
- 
+ //console.log(currentHead)
 
+}
+
+LinkedList.prototype.reverse = function () {
   
- };
+};
 
-let singlyLinkedList = new SinglyLinkedList();
+let linked = new LinkedList();
+linked.insertNode(2);
+linked.insertNode(3);
+linked.insertFirst(1);
 
-singlyLinkedList.insertFirstNode(3);
-singlyLinkedList.insertFirstNode(4);
-singlyLinkedList.insertLastNode(5);
-// singlyLinkedList.firstElement();
-// singlyLinkedList.lastElement();
-singlyLinkedList.deleteLastNode();
-//console.log(singlyLinkedList.searchData(5));
-//singlyLinkedList.printAllData();
-console.log(singlyLinkedList);
+ linked.insertAtIndex(6, 9)
+ //linked.removeEl(1)
+linked.removeLast();
+linked.printNode();
+// console.log(linked.searchEl(7))
+// function sNodeData(data) {
+//   this.data = data;
+//   this.next = null;
+// }
+
+// function SinglyLinkedList() {
+//   this.head = null;
+//   this.size = 0;
+// }
+
+// SinglyLinkedList.prototype.insertFirstNode = function (data) {
+//   if (this.head === null) {
+//     this.head = new sNodeData(data);
+//   } else {
+//     let temp = this.head;
+//     this.head = new sNodeData(data);
+//     this.head.next = temp;
+//   }
+
+//   this.size++;
+// };
+
+// SinglyLinkedList.prototype.insertLastNode = function (data) {
+//   if (this.head === null) {
+//     this.head = new sNodeData(data);
+//   } else {
+//     let currentHead = this.head;
+//     while (currentHead.next !== null) {
+//       currentHead = currentHead.next;
+//     }
+
+//     currentHead.next = new sNodeData(data);
+//   }
+
+//   this.size++;
+// };
+
+// SinglyLinkedList.prototype.insertLastNode = function (data) {
+//   if (this.head === null) {
+//     this.head = new sNodeData(data);
+//   } else {
+//     let currentHead = this.head;
+//     while (currentHead.next !== null) {
+//       currentHead = currentHead.next;
+//     }
+
+//     currentHead.next = new sNodeData(data);
+//   }
+
+//   this.size++;
+// };
+
+// SinglyLinkedList.prototype.printAllData = function (data) {
+//   let currentHead = this.head
+//   while(currentHead){
+//     console.log(currentHead.data)
+//     currentHead = currentHead.next
+//   }
+
+// };
+
+// SinglyLinkedList.prototype.firstElement = function () {
+//  console.log(this.head.data)
+
+// };
+// SinglyLinkedList.prototype.lastElement = function () {
+
+//    let currentHead = this.head
+//   while(currentHead.next){
+//     currentHead = currentHead.next
+//   }
+//   console.log(currentHead.data)
+//  };
+
+//  SinglyLinkedList.prototype.searchData = function (value) {
+
+//    let currentHead = this.head
+//   while(currentHead){
+//     if(currentHead.data === value){
+//       return true
+//     }
+//     currentHead = currentHead.next
+//   }
+//   return false
+//  };
+
+//  SinglyLinkedList.prototype.deleteFirstNode = function () {
+//   if(!this.head){
+//     return null
+//   }
+//   let newHead = this.head.next
+//   this.head = newHead
+//  //console.log(currentHead.data)
+
+//  this.size--
+
+//  };
+
+//  SinglyLinkedList.prototype.deleteLastNode = function () {
+//   if(!this.head){
+//     return null
+//   }
+//   let currentHead = this.head
+//   let prevHead
+//   while(currentHead.next){
+//     prevHead = currentHead
+//     currentHead = currentHead.next
+//   }
+//   //console.log(prevHead.data)
+//   prevHead.next = null
+//   //console.log(currentHead.data)
+//  this.size--
+
+//  };
+
+

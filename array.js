@@ -2316,63 +2316,6 @@ var thirdMax = function (nums) {
 
 // console.log(squarePattern(4))
 
-// -----BEGIN CERTIFICATE-----
-// MIIEqjCCA5KgAwIBAgIUDHultd4eoZXro6/zGkgaUrhsWwswDQYJKoZIhvcNAQEL
-// BQAwgYsxCzAJBgNVBAYTAlVTMRkwFwYDVQQKExBDbG91ZEZsYXJlLCBJbmMuMTQw
-// MgYDVQQLEytDbG91ZEZsYXJlIE9yaWdpbiBTU0wgQ2VydGlmaWNhdGUgQXV0aG9y
-// aXR5MRYwFAYDVQQHEw1TYW4gRnJhbmNpc2NvMRMwEQYDVQQIEwpDYWxpZm9ybmlh
-// MB4XDTIzMDIyMTE5MTcwMFoXDTM4MDIxNzE5MTcwMFowYjEZMBcGA1UEChMQQ2xv
-// dWRGbGFyZSwgSW5jLjEdMBsGA1UECxMUQ2xvdWRGbGFyZSBPcmlnaW4gQ0ExJjAk
-// BgNVBAMTHUNsb3VkRmxhcmUgT3JpZ2luIENlcnRpZmljYXRlMIIBIjANBgkqhkiG
-// 9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn1ZmO6U8viLz8WWuHYz61oihkTMV1OOnd6QM
-// IQV4YmoOiczrExCmCyYhj7zu2R7NitDBM9V4MNVO/3ZVhLMWe+Mw0wFH9K3AUdTC
-// ssCdeh55ApU9OjwMd8c5sjhDieJ59KOHThNGX8Ef9gOJ8Id5W4uLOgqj4d4R15lw
-// 4Le0vJZAcVXynwFfdaJl8tPW2R2VSGCI04Dxb+lAwWzijg9FTsF1tg+vrr6eQK1Q
-// NaewxZ6jbVKJeJ8eA72hSt+XllWOp0U/v+KNuWdOx9qiUlPtAsgANgNP4CsRw3fP
-// vn9CEfPAx4E29WeInVfcZYjYR1Gw2K0KrbpYp/23jA/25N2KPQIDAQABo4IBLDCC
-// ASgwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcD
-// ATAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBS8a0n8X8baDoqVxRXmCSpcuvYatzAf
-// BgNVHSMEGDAWgBQk6FNXXXw0QIep65TbuuEWePwppDBABggrBgEFBQcBAQQ0MDIw
-// MAYIKwYBBQUHMAGGJGh0dHA6Ly9vY3NwLmNsb3VkZmxhcmUuY29tL29yaWdpbl9j
-// YTAtBgNVHREEJjAkghEqLmNhcmVyLXZpc2l0LmNvbYIPY2FyZXItdmlzaXQuY29t
-// MDgGA1UdHwQxMC8wLaAroCmGJ2h0dHA6Ly9jcmwuY2xvdWRmbGFyZS5jb20vb3Jp
-// Z2luX2NhLmNybDANBgkqhkiG9w0BAQsFAAOCAQEAqJu5avcvGvh03Ke+Repr7Nv7
-// aKfZzJ/2iRfrt1wHAmvsr4WbWGhpcd92Z7Esl1IL2Q7+qEBnD9LUf8CbL9GkyWw8
-// bbaXhz85MaoOMHT+Y5Db7eTPcZBxDTtsG2FTFrDmjgh5W+HSTzWUUcLw72NOE4gN
-// CLccQIR5LtDLs1u/p+QS/ZWaILo/jQJLUSaRDilkJ6ZJWZRR32NzhkH6G56elodZ
-// 13coxoalfwft9nxOvBT7l75dIjs92KhtYc4vGVr6Abm6wv81ohZw8gtpVUrrejy9
-// mtZmt27Cci2z10SPDGa+5vp6t8uDWL3ifbiJiWmootJLvATZ/a+D9nQe3ZSrsw==
-// -----END CERTIFICATE-----
-
-// -----BEGIN PRIVATE KEY-----
-// MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCfVmY7pTy+IvPx
-// Za4djPrWiKGRMxXU46d3pAwhBXhiag6JzOsTEKYLJiGPvO7ZHs2K0MEz1Xgw1U7/
-// dlWEsxZ74zDTAUf0rcBR1MKywJ16HnkClT06PAx3xzmyOEOJ4nn0o4dOE0ZfwR/2
-// A4nwh3lbi4s6CqPh3hHXmXDgt7S8lkBxVfKfAV91omXy09bZHZVIYIjTgPFv6UDB
-// bOKOD0VOwXW2D6+uvp5ArVA1p7DFnqNtUol4nx4DvaFK35eWVY6nRT+/4o25Z07H
-// 2qJSU+0CyAA2A0/gKxHDd8++f0IR88DHgTb1Z4idV9xliNhHUbDYrQqtulin/beM
-// D/bk3Yo9AgMBAAECggEAF16Ip/7YJdrihGkxXEwtDgIEEFO5w/uPuFBrJvyyZ1y+
-// vR886xLqB4CUM4y2S0nlQ5LSg1OvyRm/+F/WsxvBFHKB2rC5aP2C032tAKKXdi25
-// +dMBo+Tivz6NC8KMxVBeKq9BTQYusCSXF3H1bT2xYufYh66/0oTLgR+UGqFW9MGp
-// aFUKZzfeXGWkuzb27ztC+X/nQunvSu+21etzIZNHQnGgZK7Dozap6otkqjooyibA
-// xe6qaMccc8lUvK4ncYP2KqbfG7sz89ahOAiQ5MFaAu0hSV5KKHtbMIc5RcrklhK8
-// /RH1Cw8xfIiQtvxulO9XrIUY+TZM4Y3j5Zs4E6IzUQKBgQDUZKkfB3K8B7flfxKq
-// 4XBU6G2P1m3j70p9f3phRTv4BBEPAOMp3so1rf8s0lxWidpK/5DgXhtS6YPMnhf6
-// 8bJU3jlN+XTDQ3SgvXekD20xLm3tAul/Qd+M4wqZOW2mL0imXvNuzCWbSHuHv1wH
-// dn/lssTjdCMQIQPbRtJJFQDd5wKBgQDADSR/US8/tPlHpZ7Pi2FXQlzYvYxxMc/T
-// 1VQrElKWU+8S6S9It0jAwCKZtBP7MoK/2sFU9Pl66X4a07GppiUZORedweSVigOX
-// K+WvZC+98+icdGrLATlqx2754AtClami/U18Y4Zp4F1qgByv94vkL+aD9EHJplRg
-// ENmZY1mqOwKBgQC4xmXXZ8xqRrC2yIk9/miSha6jXyI1FT2R1rBqJShZyXfpvJTk
-// HT1/28LOhKfuZXlym8m3WEefJyYRgkxMda72ZGooKuho46t4F70ZDo6pJcJeWpU2
-// r+FDGVZkHPEGjcY/bwWLE7F32WQWoeT3XSFBfPgLBUNnycEoKAHTsKETawKBgQCg
-// MFYo/AZ1FPZ4FGUKqC9hITFgd3oVUH8RKfcyle3dBdV76JRQCtDcNWam3dVsyQzW
-// ChkIS+1r4CYXKkwePT7kcwKHy5pmQOANz8edK+vGfROgrFoHSdYigobGVWIO/9am
-// 5LEk9769wS8qDgHfpJNCmdGkbrARCnOGTYeysXOw0QKBgDSA6wBfB4cH9RTq1JNS
-// zEvts8fRBOfeeeXo00svP9fztPa+f2jbMuiJIHei1fVEjcumNORwhq23hshBBlDQ
-// hIHc342RASfdjCydG9WXaXkW4PprJzd1Jlhs9gjC1+BwddKU7niC4GSQ72MJCYZd
-// 3IFdclS+jg3LCEnVrXCq6TBu
-// -----END PRIVATE KEY-----
-
 function bSearch(arr, target) {
   let startPoint = 0;
   let endPoint = arr.length - 1;
@@ -2648,23 +2591,74 @@ let as = [6, 3, 4, 8];
 //   }
 // }
 // grade(studentAnswers, correctAns);
-let ax = [
-  [1, 2, 3, 4, 5, 6],
-  [7, 7, 7, 7, 7, -7],
-];
-let sum = 0
-function countDownToZero(n){
- 
-  //BASE CASE
-//  sum = sum + n
-//   console.log(sum , "here")
-  if(n === 0){
-    return n
+
+function insertElArr(index, element, array) {
+  for (let i = array.length - 1; i > index; i--) {
+    array[i + 1] = array[i];
   }
- 
-  // console.log(n)
-  // console.log(sum + n)
-  return n + countDownToZero(n-1)
+  let prevElement = array[index];
+  array[index] = element;
+  array[index + 1] = prevElement;
+
+  return array;
 }
 
-console.log(countDownToZero(3))
+//console.log(insertElArr(2, 'orange', ['a','b','c','d']))
+
+function removeElArr(index, array) {
+
+  let removeEl = array[index]
+  
+  for (let i = index; i < array.length; i++) {
+    array[i] = array[i + 1];
+  }
+
+  return array
+  
+}
+console.log(removeElArr(["a", "b", "c", "d"].length-1, ["a", "b", "c", "d"]));
+
+function removeEl(element, array) {
+
+  
+  let index;
+
+  for (let j = 0; j < array.length; j++) {
+    if(element === array[j]){
+      index = j
+    }
+  }
+ 
+  for (let i = index; i < array.length; i++) {
+    array[i] = array[i + 1];
+  }
+
+  return array
+}
+console.log(removeEl('c', ["a", "b", "c", "d"]))
+
+function getFirstIndex(element, array) {
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === element) {
+      return i;
+    }
+  }
+
+  return -1;
+}
+
+function getLastIndex(element, array) {
+  let lastIndex;
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === element) {
+      lastIndex = i;
+    }
+  }
+
+  if (lastIndex >= 0) {
+    return lastIndex;
+  } else {
+    return -1;
+  }
+}
+//console.log(getLastIndex("c", ["a", "b", "c", "d", "b"]));
